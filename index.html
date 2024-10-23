@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dit is de titel van de pagina</title>
+
+        <h1 style="font-size: 10vw">Hello World!</h1>
+
+        <link href="voorbeeld_stylesheet.css" type="text/css" rel="stylesheet">
+        
+        <!--1vw = 1% van volledige viewport -> als viewport 50cm  1vw=0,5-->
+        <style>
+            footer{
+                background-color: darkmagenta;
+                color: white;
+                text-align: center;
+            }
+
+            h4{
+                background-color: lightblue;
+                text-align: center;
+                color: red
+            }
+
+            .xyz{
+                border: 20px outset black;
+                background-color: yellow;
+                text-align: center;
+            }
+            /* Universele classe */
+
+            p.voorbeeld{
+                background-color:black;
+                color: white;
+            }
+            /*p hier staat voor paragraph, dus class werkt enkel voor paragrafen, voorbeeld kan alles zijn */
+
+            p.orange{
+                color: orange;
+            }
+
+            p#winter{ /*dit is een id*/
+                color: blue;
+            }
+
+        </style>
+    </head>
+
+    <body style="background-color: darksalmon;" class="bodyclass">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- 3 manieren om -->
+        <p class="orange">Het is herfst</p> 
+        <p id="lente">Het is lente</p>
+        <p id="winter">Het is winter</p>
+
+        <!-- Alles hiertussen is commentaar -->
+
+        <div class="xyz">
+            <h2>Welkom op deze pagina</h2>
+            <p>Dit is een paragraaf</p>
+        </div>
+
+        <div class="voobeeld3">
+            TEST
+        </div>
+
+        <p class="xyz">Dit is een alinea</p>
+        <p>Dit is een andere alinea</p>
+        <p class="voorbeeld">Dit is nog een alinea</p>
+
+        <h1>Dit is de grootste titel</h1>
+        <h2>Dit is een kleinere</h2>
+        <h4 style="text-align: left;">Iets kleiner</h4>
+
+        <!-- SHIFT + ALT + F voor automatische indent opmaak -->
+
+        Dit is tekst met een zin-einde <br>
+        en veel spati&nbsp;&nbsp;es en een horizontale lijn. <hr>
+
+        <!-- &nbsp; is voor extra spaties -->
+         <!-- hr is voor een horizontale lijn -->
+
+        
+        <p>
+            <b>Deze tekst is vet</b> <br>
+            <i>Deze tekst is schuin gedrukt</i> <br>
+            <u>Deze tekst is onderstreept</u> <br>
+            <b><i><u>Deze tekst is een combinatie van de drie</u></i></b>
+        </p>
+
+        <strong>Deze tekst is ook vet</strong>
+        <em>Deze tekst is ook schuin gedrukt</em> <br>
+
+        <!-- Linken van verschillende dingen: hyperlinks -->
+            <!-- hyperlink naar files -->
+        <a href="test.html" target="_blank">Klik hier</a>  om een nieuwe bestand te openen. <br>
+
+            <!-- Hyperlink naar foto's -->
+        <a href="doggo.jpg" target="_blank">Klik hier</a> voor een foto van een hond. <br>
+
+            <!-- Hyperlink naar mail -->
+        <a href="mailto:anass.akhatou@gmail.com">anass.akhatou@gmail.com</a><br>
+
+            <!-- Hyperlink naar website -->
+        <a href="https://www.google.com" target="_blank">Klik hier</a> om naar Google te gaan.<br>
+
+            <!-- Naar een ander element op dezelfde pagina navigeren -->
+        <a href="#Leven">Leven</a> 
+        <!-- Verplaats a tag naar boven om navigatie te testen -->
+
+        <h4>
+            <a id="Leven">Leven</a>
+        </h4>
+
+        <!-- AFBEELDINGEN -->
+        <!-- Nooit absoluut pad gebruiken (C:/.../...) wel Relatief pad gebruiken -->
+         <!-- hoogte en breedte aanpassen met height en width gecomineerd met:
+          x% of x of x px -->
+
+         <!-- <img src="../../.DOCS/dog.jpg" alt="Dit is een foto van een hond" height="25%" width="25%"> -->
+         <img src="Images/JPG/dog.jpg" alt="Dit is een foto van een hond" height="25%" width="25%">
+
+         <!-- Per map die je naar buiten gaat gebruik je 1 keer ../ 
+          2 mappen terug = ../../ stel je gaan mappen dieper dan current directory (waar je html bestand staat)
+          dan geef je mapnamen mee. -->
+
+            <br>
+
+        <!-- AUDIO -->
+           <audio controls>
+                <source src="dogmusic.mp3" type="audio/mpeg">
+                Browser ondersteunt geen audio
+                <!-- <source src="dogmusic.ogg" type="audio/ogg" -->
+           </audio> 
+        
+            <br>
+
+        <!-- VIDEO -->
+           <video height="25%" width="25%" controls>
+                <source src="dogvideo.mp4" type="video/mp4">
+                Browser ondersteunt geen video
+           </video>
+
+        <!-- LIJSTEN: 2 mogelijke lijsten -> unordered / ordered
+         unordered = ul
+         ordered = ol -->
+        <ul class="voorbeeld2">
+            <li>Eerste item</li>
+            <li>Tweede item</li>
+            <li>Derde item</li>
+        </ul>
+
+        <ol>
+            <li>Eerste item</li>
+            <li>Tweede item</li>
+            <li>Derde item</li>
+        </ol>
+
+        <!-- ol mogelijkheden: 1 a A i I -->
+        <ol type="i">
+            <li>1e item</li>
+            <li>2e item</li>
+            <li>3e item</li>
+        </ol>
+
+        <!-- ul mogelijkheden: disc square circle -->
+        <ul type="circle">
+            <li>1e item</li>
+            <li>2e item</li>
+            <li>3e item</li>
+        </ul>
+
+        <!-- geneste lijsten -->
+         <ul type="disc">
+            <li>1e item</li>
+                <ul type="square">
+                    <li>1e subitem</li>
+                    <li>2e subitem</li>
+                </ul>
+            </li>
+            <li>2e item</li>
+            <li>3e item</li>
+        </ul>
+
+        <!-- TABELLEN: th is table header / tr is rij / td = kolom in tabel -->
+         <table border="1">
+            <!-- rij1 -->
+            <tr>
+                <td>1e rij, 1e kolom</td>
+                <td>1e rij, 2e kolom</td>
+            </tr>
+            <!-- rij2 -->
+            <tr>
+                <td>2e rij, 1e kolom</td>
+                <td>2e rij, 2e kolom</td>
+            </tr>
+         </table>
+
+         <br>
+
+         <!-- Tabel met table headers -->
+            <table border="1">
+                <tr>
+                    <th>Naam</th>
+                    <th>Leeftijd</th>
+                    <th>Woonplaats</th>
+                </tr>
+                <tr>
+                    <td>Anass</td>
+                    <td>22</td>
+                    <td>Mechelen</td>
+                </tr>
+                <tr>
+                    <td>Yassine</td>
+                    <td>20</td>
+                    <td>Antwerpen</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <!-- cellpadding en cellspacing -->
+            <table border="1" cellpadding="10" >
+                <tr>
+                    <td>Veel ruimte</td>
+                </tr>
+            </table>
+
+            <table border="1" cellspacing="20" >
+                <tr>
+                    <td>Veel ruimte</td>
+                </tr>
+            </table>
+
+            <!-- Merging van rijen -->
+            <table border="1">
+                <tr>
+                    <td>1e rij, 1e kolom</td>
+                    <td rowspan="2">1e rij, 2e kolom</td>
+                </tr>
+                <tr>
+                    <td>2e rij, 1e kolom</td>
+                </tr>
+                <tr>
+                    <td>3e rij, 1e kolom</td>
+                    <td>3e rij, 2e kolom</td>
+                </tr>
+            </table>
+            
+            <br/>
+            <!--kolommen samenvoegen met colspan-->
+            <table border="1">
+                <tr>
+                    <td>1e rij, 1e kolom</td>
+                    <td>1e rij, 2e kolom</td>
+                </tr>
+                <tr>
+                    <td colspan="2">2e rij, 1e kolom</td>
+            </table>
+
+            <!--container elementen: start op een nieuwe lijn en loopt van volledig links naar rechts-->
+            <div style="background-color: coral; color: cornflowerblue; padding: 2 0px;">
+                <h2>London</h2>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            </div>
+            
+            <!--Inline elementen: geen nieuwwe lijn-->
+            <p>De gekleurde text is een voorbeeld van de <span style="color:yellow">SPAN</span> tag.</p>
+
+            <!--I-frame: webpagina op een webpagina-->
+            <iframe src="http://www.windows93.net" style="border:none;"></iframe>
+
+            <!--Forms-->
+            <form action="" method="post">
+                <input type="text" name="Naam" size="40"><br>
+                <input type="password" name="Wachtwoord"><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <!--keuzerondjes-->
+            <form>
+                <input type="radio" name="keuzes" value="keuze1">Keuze 1<br>
+                <input type="radio" name="keuzes" value="keuze2" checked>Keuze 2<br>
+                <input type="radio" name="keuzes" value="keuze3">Keuze 3<br>
+            </form>
+
+            <form>
+                tekstveld van 1 rij: <input type="text" name="tekstveld1" size="20"><br>
+                textarea: <textarea rows="3" cols="30" name="txtarea">default text</textarea>
+
+                vinkjes: <br><input type="checkbox" name="check" value="c1" checked>Keuze 1<br>
+                <input type="checkbox" name="check" value="c1" checked>Keuze 2<br>
+
+                dropdownlist: <select name="dropdown">
+                    <option>Optie 1</option>
+                    <option>Optie 2</option>
+                    <option>Optie 3</option>
+                </select>
+
+                <br>
+                <button type="button" onclick="alert('Hello world!')">Click me!</button>
+
+            </form>
+            
+
+
+            <!--andere container elementen-->
+            <h1>Heading x</h1>
+            <p>Dit is random text</p>
+
+            <footer>
+                <p>Autheur: Anass</p>
+                <p><a href="mailto:anass.akhatou@gmail.com">anass.akhatou@gmail.com</a></p>
+            </footer>
+
+
+            <!--1e stijl: external (css in apart bestand)
+                2e stijl: internal (css in head van html bestand)
+                3e stijl: inline (css in html bestand zelf, in tag) past dees als eerste toe!!--> 
+    </body>
+</html>

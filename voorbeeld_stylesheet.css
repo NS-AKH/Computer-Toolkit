@@ -56,3 +56,27 @@ a:hover{ /* muis erover */
 a:active{ /* actieve link, wanneer er op link gedrukt word*/
     color: red;
 }
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0,0%, 25%);
+    padding: 0%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0,0%, 10%);
+}
+
+.navbar li{
+    float: left;
+}
