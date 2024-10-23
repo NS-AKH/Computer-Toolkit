@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="stylesheet.css" type="text/css" rel="stylesheet">
+        <script src = "script.js"></script>
+    </head>
+    <body onload="darkLight()">
+        <p id="hello">Dit is een test!</p>
+        <p>Een beetje tekst om te zien wat er gebeurt.</p>
+        <button type="button" onclick="helloWorld()">Click me!</button>
+        <br>
+        <button type="button" onclick="darkLight()">Change Mode</button>
+        <br>
+        <br>
+        <img src="../../Week 3/Images/JPG/halloween.jpg" id="Hw" onmouseover="kleurInvert()"
+        height="25%" width="25%" onmouseout="kleurNormaal()" style="filter: invert(1);">
+
+        <br><br>naam: <input type="text" id="naam"><br>
+        paswoord: <input type="password" id="paswoord"><br>
+        <button type="button" onclick="saveInputPrintOutput()">Toon waarden</button>
+        <p id="output"></p>
+
+        <input type="number" id="n">
+        <br><button type="button" onclick="forLoop()">SOM</button>
+        <p id="outputSom"></p>
+
+        <br><button type="button" onclick="datum()">VANDAAG</button>
+        <p id="outputDatum"></p>
+    </body>
+</html>

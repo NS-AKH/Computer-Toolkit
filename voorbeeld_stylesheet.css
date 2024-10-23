@@ -1,0 +1,58 @@
+/* Dit is commentaar over 
+meerdere lijnen  */
+
+/* Volgorde van belangrijkheid:
+1. Inline
+2. Internal (in style in head)
+3. External
+4. Default */
+
+body{
+    background-color: darksalmon;
+    border: red;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red;
+
+    background-image: url(Images/JPG/pattern.jpg);
+    background-repeat: repeat;
+    background-size: 1000px;
+    background-position: right top;
+
+    background:linear-gradient(#e66465, #9198e5);
+}
+
+p{
+    color:aqua;
+    font-weight: bold;
+}
+
+/* Elementen groeperen */
+h1,h2,h3,h4{
+    text-align: center;
+    color: fuchsia;
+}
+
+.voorbeeld2{
+    color:darkblue;
+}
+
+div.voorbeeld3{
+    text-align: end;
+}
+
+p#lente{
+    color: chartreuse;
+}
+
+a:link,a:visited{ /* basis link */
+    color: green;
+}
+
+a:hover{ /* muis erover */
+    color: greenyellow;
+}
+
+a:active{ /* actieve link, wanneer er op link gedrukt word*/
+    color: red;
+}
